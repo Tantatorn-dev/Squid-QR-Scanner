@@ -4,7 +4,7 @@ from time import sleep
 def main():
     
     control_flag = True
-    print("Welcome to DuoPay Payment System!")
+    print("Welcome to Squid Payment System!")
     
     while control_flag: 
         output = scan_qr()
