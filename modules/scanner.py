@@ -10,6 +10,8 @@ def scan_qr():
     qr = qrtools.QR()
     qr.decode("temp.png")
     
+    os.system("rm temp.png")
+    
     return qr.data
 
 scan_qr()
