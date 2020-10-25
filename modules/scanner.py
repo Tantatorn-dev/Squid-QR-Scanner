@@ -1,4 +1,5 @@
 import cv2
+from .api import update_ticket
 
 class Scanner:
 
@@ -23,7 +24,9 @@ class Scanner:
                 cv2.putText(img, data, (int(bbox[0][0][0]), int(bbox[0][0][1]) - 10), cv2.FONT_HERSHEY_SIMPLEX,
                             0.5, (0, 255, 0), 2)
                 if data:
+                    update_ticket(data)
                     print("data found: ", data)
+                    
             cv2.imshow("code detector", img)
             if(cv2.waitKey(1) == ord("q")):
                 break
