@@ -1,3 +1,2 @@
-modules/*.pyc
-*.pyc
+modules/__pycache__
 modules/*.png
